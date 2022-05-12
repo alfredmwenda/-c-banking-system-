@@ -1,6 +1,6 @@
-#include<iostream>
-#include<stdio.h>
-#include<conio.h>
+#include <iostream>
+#include <stdio.h>
+//#include <conio.h>
 using namespace std;
 
 class bank{
@@ -32,7 +32,7 @@ void bank::open_account()
 }
 void bank::deposit_money()
 {
-    int=d;
+    int d;
     cout<<"\n Enter amount you want to deposit:"<<endl;
     cin>>d;
     balance = d + balance;
@@ -70,7 +70,7 @@ int main()
     cout<<"\n5.) Exit-->"<<endl;
 
     cin>>ch;
-    swich(ch)
+    switch(ch)
     {
     case 1:
         cout<<"\n1.) Open Account:"<<endl;
@@ -86,17 +86,17 @@ int main()
         break;
     case 4:
         cout<<"\n4.) Display account:"<<endl;
-        obl.display_account();
+        obj.display_account();
         break;
     case 5:
         if (ch==5)
         {
-            exit(1)
-        }
+            exit(1);
+        };
     default:
         cout<<"\n Please Try again!"<<endl;
         break;
 
     }
     return 0;
-}
+};
